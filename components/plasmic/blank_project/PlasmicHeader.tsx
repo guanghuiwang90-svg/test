@@ -80,7 +80,6 @@ export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeader__OverridesType = {
   root?: Flex__<"div">;
-  freeBox?: Flex__<"div">;
 };
 
 export interface DefaultHeaderProps {
@@ -143,82 +142,74 @@ function PlasmicHeader__RenderFunc(props: {
         sty.root
       )}
     >
-      <div
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        className={classNames(projectcss.all, sty.freeBox)}
+      <PlasmicLink__
+        className={classNames(
+          projectcss.all,
+          projectcss.a,
+          projectcss.__wab_text,
+          sty.link__dTmkv
+        )}
+        component={Link}
+        href={"https://www.plasmic.app/"}
+        legacyBehavior={false}
+        platform={"nextjs"}
       >
-        <PlasmicLink__
-          className={classNames(
-            projectcss.all,
-            projectcss.a,
-            projectcss.__wab_text,
-            sty.link___1GioN
-          )}
-          component={Link}
-          href={"https://www.plasmic.app/"}
-          legacyBehavior={false}
-          platform={"nextjs"}
-        >
-          {"Product"}
-        </PlasmicLink__>
-        <PlasmicLink__
-          className={classNames(
-            projectcss.all,
-            projectcss.a,
-            projectcss.__wab_text,
-            sty.link__uwVsU
-          )}
-          component={Link}
-          href={"https://www.plasmic.app/"}
-          legacyBehavior={false}
-          platform={"nextjs"}
-        >
-          {"Blog"}
-        </PlasmicLink__>
-        <PlasmicLink__
-          className={classNames(
-            projectcss.all,
-            projectcss.a,
-            projectcss.__wab_text,
-            sty.link__aRv1
-          )}
-          component={Link}
-          href={"https://www.plasmic.app/"}
-          legacyBehavior={false}
-          platform={"nextjs"}
-        >
-          {"Contact Us"}
-        </PlasmicLink__>
-        <PlasmicLink__
-          className={classNames(
-            projectcss.all,
-            projectcss.a,
-            projectcss.__wab_text,
-            sty.link__t9Xaa
-          )}
-          component={Link}
-          href={"https://www.plasmic.app/"}
-          legacyBehavior={false}
-          platform={"nextjs"}
-        >
-          {"About Candy"}
-        </PlasmicLink__>
-      </div>
+        {"Product"}
+      </PlasmicLink__>
+      <PlasmicLink__
+        className={classNames(
+          projectcss.all,
+          projectcss.a,
+          projectcss.__wab_text,
+          sty.link__jNqYf
+        )}
+        component={Link}
+        href={"https://www.plasmic.app/"}
+        legacyBehavior={false}
+        platform={"nextjs"}
+      >
+        {"Blog"}
+      </PlasmicLink__>
+      <PlasmicLink__
+        className={classNames(
+          projectcss.all,
+          projectcss.a,
+          projectcss.__wab_text,
+          sty.link__y6IuW
+        )}
+        component={Link}
+        href={"https://www.plasmic.app/"}
+        legacyBehavior={false}
+        platform={"nextjs"}
+      >
+        {"About Candy"}
+      </PlasmicLink__>
+      <PlasmicLink__
+        className={classNames(
+          projectcss.all,
+          projectcss.a,
+          projectcss.__wab_text,
+          sty.link__rmHZp
+        )}
+        component={Link}
+        href={"https://www.plasmic.app/"}
+        legacyBehavior={false}
+        platform={"nextjs"}
+      >
+        {"Contact"}
+      </PlasmicLink__>
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox"],
-  freeBox: ["freeBox"]
+  root: ["root"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  freeBox: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -283,7 +274,6 @@ export const PlasmicHeader = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,

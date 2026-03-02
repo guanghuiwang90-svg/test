@@ -105,10 +105,9 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
+  freeBox?: Flex__<"div">;
   header?: Flex__<typeof Header>;
-  h1?: Flex__<"h1">;
-  dartInstantElectricWaterHeater?: Flex__<"h1">;
-  link?: Flex__<"a"> & Partial<LinkProps>;
+  img?: Flex__<typeof PlasmicImg__>;
 };
 
 export interface DefaultHomepageProps {}
@@ -184,50 +183,28 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <div className={classNames(projectcss.all, sty.freeBox___0T8AU)}>
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
             <Header
               data-plasmic-name={"header"}
               data-plasmic-override={overrides.header}
               className={classNames("__wab_instance", sty.header)}
             />
-          </div>
-          <div className={classNames(projectcss.all, sty.freeBox__j3Kb)}>
-            <div className={classNames(projectcss.all, sty.freeBox__jbzKa)}>
-              <div className={classNames(projectcss.all, sty.freeBox__imevF)}>
-                <h1
-                  data-plasmic-name={"h1"}
-                  data-plasmic-override={overrides.h1}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.h1,
-                    projectcss.__wab_text,
-                    sty.h1
-                  )}
-                >
-                  {"80 Years Of Candy"}
-                </h1>
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___6IRpk
-                  )}
-                >
-                  {
-                    "Never miss the innovation that \nmakes life easier since 1945"
-                  }
-                </div>
-              </div>
-            </div>
+
             <PlasmicImg__
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
               alt={""}
-              className={classNames(sty.img__z5Zbm)}
-              displayHeight={"100%"}
+              className={classNames(sty.img)}
+              displayHeight={"auto"}
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
               displayMinHeight={"0"}
               displayMinWidth={"0"}
-              displayWidth={"1493px"}
+              displayWidth={"auto"}
               loading={"lazy"}
               src={{
                 src: "/plasmic/blank_project/images/frame30371Png.png",
@@ -236,80 +213,6 @@ function PlasmicHomepage__RenderFunc(props: {
                 aspectRatio: undefined
               }}
             />
-
-            <div className={classNames(projectcss.all, sty.freeBox___8H4Ff)}>
-              <div className={classNames(projectcss.all, sty.freeBox__u84Gm)}>
-                <div className={classNames(projectcss.all, sty.freeBox__e7DLg)}>
-                  <h1
-                    data-plasmic-name={"dartInstantElectricWaterHeater"}
-                    data-plasmic-override={
-                      overrides.dartInstantElectricWaterHeater
-                    }
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.h1,
-                      projectcss.__wab_text,
-                      sty.dartInstantElectricWaterHeater
-                    )}
-                  >
-                    {"Dart Instant Electric Water Heater"}
-                  </h1>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__maoRm
-                    )}
-                  >
-                    {
-                      "Hot Water in Seconds. Engineered for the Safest Family Showers."
-                    }
-                  </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__jZNgi
-                    )}
-                  >
-                    {"\u20b112,999.30"}
-                  </div>
-                  <PlasmicLink__
-                    data-plasmic-name={"link"}
-                    data-plasmic-override={overrides.link}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link
-                    )}
-                    component={Link}
-                    href={"https://www.plasmic.app/"}
-                    legacyBehavior={false}
-                    platform={"nextjs"}
-                  >
-                    {"Learn more"}
-                  </PlasmicLink__>
-                </div>
-                <PlasmicImg__
-                  alt={""}
-                  className={classNames(sty.img__ucp2H)}
-                  displayHeight={"auto"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"100%"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"495px"}
-                  loading={"lazy"}
-                  src={{
-                    src: "/plasmic/blank_project/images/资源111Png.png",
-                    fullWidth: 992,
-                    fullHeight: 648,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -318,21 +221,19 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "h1", "dartInstantElectricWaterHeater", "link"],
+  root: ["root", "freeBox", "header", "img"],
+  freeBox: ["freeBox", "header", "img"],
   header: ["header"],
-  h1: ["h1"],
-  dartInstantElectricWaterHeater: ["dartInstantElectricWaterHeater"],
-  link: ["link"]
+  img: ["img"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
   header: typeof Header;
-  h1: "h1";
-  dartInstantElectricWaterHeater: "h1";
-  link: "a";
+  img: typeof PlasmicImg__;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -397,12 +298,9 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
     header: makeNodeComponent("header"),
-    h1: makeNodeComponent("h1"),
-    dartInstantElectricWaterHeater: makeNodeComponent(
-      "dartInstantElectricWaterHeater"
-    ),
-    link: makeNodeComponent("link"),
+    img: makeNodeComponent("img"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
