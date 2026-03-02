@@ -19,7 +19,7 @@
 .root > * {
   grid-column: 4;
 }
-.freeBox {
+.freeBox__df4Lo {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -47,4 +47,38 @@
 }
 .img > picture > img {
   object-fit: cover;
+}
+.freeBox__zJMmc {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  left: 409px;
+  top: 394px;
+  padding: 8px;
+}
+.h1 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-37pHizh-si_m);
+  font-size: 48px;
+  font-family: "Outfit", sans-serif;
+  min-width: 0;
+}
+.text {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: var(--token-37pHizh-si_m);
+  font-size: 32px;
+  margin-top: 35px;
+  font-family: "Outfit", sans-serif;
+  line-height: 1.25;
+  min-width: 0;
 }

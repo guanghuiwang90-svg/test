@@ -105,9 +105,10 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
-  freeBox?: Flex__<"div">;
   header?: Flex__<typeof Header>;
   img?: Flex__<typeof PlasmicImg__>;
+  h1?: Flex__<"h1">;
+  text?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -183,11 +184,7 @@ function PlasmicHomepage__RenderFunc(props: {
             sty.root
           )}
         >
-          <div
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            className={classNames(projectcss.all, sty.freeBox)}
-          >
+          <div className={classNames(projectcss.all, sty.freeBox__df4Lo)}>
             <Header
               data-plasmic-name={"header"}
               data-plasmic-override={overrides.header}
@@ -213,6 +210,34 @@ function PlasmicHomepage__RenderFunc(props: {
                 aspectRatio: undefined
               }}
             />
+
+            <div className={classNames(projectcss.all, sty.freeBox__zJMmc)}>
+              <h1
+                data-plasmic-name={"h1"}
+                data-plasmic-override={overrides.h1}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.h1,
+                  projectcss.__wab_text,
+                  sty.h1
+                )}
+              >
+                {"80 Years Of Candy"}
+              </h1>
+              <div
+                data-plasmic-name={"text"}
+                data-plasmic-override={overrides.text}
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text
+                )}
+              >
+                {
+                  "Never miss the innovation that \nmakes life easier since 1945"
+                }
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -221,19 +246,21 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "freeBox", "header", "img"],
-  freeBox: ["freeBox", "header", "img"],
+  root: ["root", "header", "img", "h1", "text"],
   header: ["header"],
-  img: ["img"]
+  img: ["img"],
+  h1: ["h1"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  freeBox: "div";
   header: typeof Header;
   img: typeof PlasmicImg__;
+  h1: "h1";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -298,9 +325,10 @@ export const PlasmicHomepage = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    freeBox: makeNodeComponent("freeBox"),
     header: makeNodeComponent("header"),
     img: makeNodeComponent("img"),
+    h1: makeNodeComponent("h1"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
