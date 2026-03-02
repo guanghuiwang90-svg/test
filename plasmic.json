@@ -348,6 +348,20 @@
           "cssFilePath": "plasmic/blank_project/PlasmicHeader.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "B0guTgG_w2s1",
+          "name": "Test2",
+          "type": "managed",
+          "projectId": "uPKkrsoUBTLvNgpvhg2MRW",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicTest2.tsx",
+          "importSpec": {
+            "modulePath": "../pages/test-2.tsx"
+          },
+          "cssFilePath": "plasmic/blank_project/PlasmicTest2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page",
+          "path": "/test-2"
         }
       ],
       "icons": [
@@ -372,6 +386,11 @@
           "id": "fnXZ-RiXZn3J",
           "name": "资源 11 1.png",
           "filePath": "../public/plasmic/blank_project/images/资源111Png.png"
+        },
+        {
+          "id": "rXW46e0LPW1m",
+          "name": "today's tasks",
+          "filePath": "../public/plasmic/blank_project/images/todaysTasks.png"
         }
       ],
       "indirect": false,
