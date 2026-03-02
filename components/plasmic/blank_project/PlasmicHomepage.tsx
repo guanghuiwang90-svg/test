@@ -279,7 +279,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 className={classNames(sty.img__los6I)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
-                displayMaxWidth={"992px"}
+                displayMaxWidth={"100%"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
                 displayWidth={"auto"}

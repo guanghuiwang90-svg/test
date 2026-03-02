@@ -164,12 +164,15 @@
 }
 .img__los6I {
   object-fit: contain;
-  max-width: 992px;
+  max-width: 100%;
   width: auto;
   margin-left: 70px;
 }
 .img__los6I > picture > img {
   object-fit: contain;
+}
+.root .img__los6I:hover {
+  transform: scale3d(1.1, 1.1, 1);
 }
 .freeBox___2Ye9W {
   display: flex;
