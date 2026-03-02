@@ -55,11 +55,11 @@
   width: auto;
   height: auto;
   max-width: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   left: 409px;
-  top: 394px;
-  padding: 8px;
+  top: 38.4%;
+  padding: 0px;
 }
 .h1 {
   width: 100%;
