@@ -165,9 +165,8 @@
 .img__los6I {
   object-fit: contain;
   max-width: 992px;
-  width: 992px;
+  width: auto;
   margin-left: 70px;
-  flex-shrink: 0;
 }
 .img__los6I > picture > img {
   object-fit: contain;

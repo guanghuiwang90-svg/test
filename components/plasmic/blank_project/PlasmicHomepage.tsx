@@ -282,7 +282,7 @@ function PlasmicHomepage__RenderFunc(props: {
                 displayMaxWidth={"992px"}
                 displayMinHeight={"0"}
                 displayMinWidth={"0"}
-                displayWidth={"992px"}
+                displayWidth={"auto"}
                 loading={"lazy"}
                 src={{
                   src: "/plasmic/blank_project/images/资源111Png.png",
