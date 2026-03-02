@@ -362,6 +362,19 @@
           "scheme": "blackbox",
           "componentType": "page",
           "path": "/test-2"
+        },
+        {
+          "id": "UBejzhghwLtu",
+          "name": "ProductItem",
+          "type": "managed",
+          "projectId": "uPKkrsoUBTLvNgpvhg2MRW",
+          "renderModuleFilePath": "plasmic/blank_project/PlasmicProductItem.tsx",
+          "importSpec": {
+            "modulePath": "ProductItem.tsx"
+          },
+          "cssFilePath": "plasmic/blank_project/PlasmicProductItem.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -391,6 +404,11 @@
           "id": "rXW46e0LPW1m",
           "name": "today's tasks",
           "filePath": "../public/plasmic/blank_project/images/todaysTasks.png"
+        },
+        {
+          "id": "lpwV0O6qeujD",
+          "name": "image 4.png",
+          "filePath": "../public/plasmic/blank_project/images/image4Png.png"
         }
       ],
       "indirect": false,

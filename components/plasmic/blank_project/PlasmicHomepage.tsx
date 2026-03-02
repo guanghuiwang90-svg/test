@@ -60,6 +60,7 @@ import {
 } from "@plasmicapp/react-web/lib/host";
 
 import Header from "../../Header"; // plasmic-import: Lx7q7GgSBE0X/component
+import ProductItem from "../../ProductItem"; // plasmic-import: UBejzhghwLtu/component
 import { _useGlobalVariants } from "./plasmic"; // plasmic-import: uPKkrsoUBTLvNgpvhg2MRW/projectModule
 import { _useStyleTokens } from "./PlasmicStyleTokensProvider"; // plasmic-import: uPKkrsoUBTLvNgpvhg2MRW/styleTokensProvider
 
@@ -289,6 +290,19 @@ function PlasmicHomepage__RenderFunc(props: {
                   fullHeight: 648,
                   aspectRatio: undefined
                 }}
+              />
+            </div>
+            <div className={classNames(projectcss.all, sty.freeBox___2Ye9W)}>
+              <ProductItem
+                className={classNames("__wab_instance", sty.productItem__oEu7O)}
+              />
+
+              <ProductItem
+                className={classNames("__wab_instance", sty.productItem__lwnil)}
+              />
+
+              <ProductItem
+                className={classNames("__wab_instance", sty.productItem__lfE0J)}
               />
             </div>
           </div>
