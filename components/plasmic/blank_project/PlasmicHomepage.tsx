@@ -106,9 +106,6 @@ export const PlasmicHomepage__ArgProps = new Array<ArgPropType>();
 export type PlasmicHomepage__OverridesType = {
   root?: Flex__<"div">;
   header?: Flex__<typeof Header>;
-  img?: Flex__<typeof PlasmicImg__>;
-  h1?: Flex__<"h1">;
-  text?: Flex__<"div">;
 };
 
 export interface DefaultHomepageProps {}
@@ -192,10 +189,8 @@ function PlasmicHomepage__RenderFunc(props: {
             />
 
             <PlasmicImg__
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
               alt={""}
-              className={classNames(sty.img)}
+              className={classNames(sty.img__rYt4D)}
               displayHeight={"auto"}
               displayMaxHeight={"none"}
               displayMaxWidth={"100%"}
@@ -213,30 +208,88 @@ function PlasmicHomepage__RenderFunc(props: {
 
             <div className={classNames(projectcss.all, sty.freeBox__zJMmc)}>
               <h1
-                data-plasmic-name={"h1"}
-                data-plasmic-override={overrides.h1}
                 className={classNames(
                   projectcss.all,
                   projectcss.h1,
                   projectcss.__wab_text,
-                  sty.h1
+                  sty.h1___4Vsas
                 )}
               >
                 {"80 Years Of Candy"}
               </h1>
               <div
-                data-plasmic-name={"text"}
-                data-plasmic-override={overrides.text}
                 className={classNames(
                   projectcss.all,
                   projectcss.__wab_text,
-                  sty.text
+                  sty.text___8Fv7R
                 )}
               >
                 {
                   "Never miss the innovation that \nmakes life easier since 1945"
                 }
               </div>
+            </div>
+          </div>
+          <div className={classNames(projectcss.all, sty.freeBox__jnLlW)}>
+            <div className={classNames(projectcss.all, sty.freeBox__usPBf)}>
+              <div className={classNames(projectcss.all, sty.freeBox__lfkqo)}>
+                <h1
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.h1,
+                    projectcss.__wab_text,
+                    sty.h1__yiw2O
+                  )}
+                >
+                  {"Dart Instant Electric Water Heater"}
+                </h1>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___0G4Qr
+                  )}
+                >
+                  {
+                    "Hot Water in Seconds. Engineered for the Safest Family Showers."
+                  }
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__syia5
+                  )}
+                >
+                  {"\u20b112,999.30"}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__s0Bt2
+                  )}
+                >
+                  {"Learn more"}
+                </div>
+              </div>
+              <PlasmicImg__
+                alt={""}
+                className={classNames(sty.img__los6I)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"992px"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"992px"}
+                loading={"lazy"}
+                src={{
+                  src: "/plasmic/blank_project/images/资源111Png.png",
+                  fullWidth: 992,
+                  fullHeight: 648,
+                  aspectRatio: undefined
+                }}
+              />
             </div>
           </div>
         </div>
@@ -246,11 +299,8 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "header", "img", "h1", "text"],
-  header: ["header"],
-  img: ["img"],
-  h1: ["h1"],
-  text: ["text"]
+  root: ["root", "header"],
+  header: ["header"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -258,9 +308,6 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
-  img: typeof PlasmicImg__;
-  h1: "h1";
-  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -326,9 +373,6 @@ export const PlasmicHomepage = Object.assign(
   {
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
-    img: makeNodeComponent("img"),
-    h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
